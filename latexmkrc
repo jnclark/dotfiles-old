@@ -1,7 +1,7 @@
 $pdf_mode = 1;
 $pdf_previewer = evince;
 #$preview_continuous_mode = 1;
-$out_dir = 'build';
+###$out_dir = 'build';
 
 
 $latex = "$latex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
