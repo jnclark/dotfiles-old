@@ -2,6 +2,10 @@
 [include]
     path = ~/.gitconfig.local
 
+# Use default editor vim for git
+[core]
+    editor = vim    
+
 # Use git pullall to pull all submodules for project
 [alias]
     pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
