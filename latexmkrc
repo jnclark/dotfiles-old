@@ -3,6 +3,7 @@ $pdf_previewer = evince;
 #$preview_continuous_mode = 1;
 #$out_dir = 'build';
 
+# Set aliases for latexmkrc so it can handle running SageTeX if neccesary
 $latex = "$latex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
 $pdflatex = "$pdflatex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
 

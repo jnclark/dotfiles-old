@@ -1,6 +1,6 @@
 dir=$(dirname "$(readlink -f "$0")") # root dotfiles directory
 files="latexmkrc vimrc gitconfig" # dotfiles to symlink
-folders="vim"
+folders="vim" #dotfolders to symlink
 olddir=$dir/dotfiles_old
 
 
@@ -24,4 +24,3 @@ done
 echo "...dotfile install process complete"
 
 #source ~/.bashrc (to be added)
-source ~/.vimrc

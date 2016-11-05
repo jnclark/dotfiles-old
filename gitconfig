@@ -2,5 +2,6 @@
 [include]
     path = ~/.gitconfig.local
 
+# Use git pullall to pull all submodules for project
 [alias]
-	pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
+    pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
