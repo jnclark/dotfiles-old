@@ -1,0 +1,6 @@
+# Use separate file for username / github token / etc
+[include]
+    path = ~/.gitconfig.local
+
+[alias]
+	pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"

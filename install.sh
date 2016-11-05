@@ -1,5 +1,5 @@
 dir=$(dirname "$(readlink -f "$0")") # root dotfiles directory
-files="latexmkrc vimrc" # dotfiles to symlink
+files="latexmkrc vimrc gitconfig" # dotfiles to symlink
 folders="vim"
 olddir=$dir/dotfiles_old
 
