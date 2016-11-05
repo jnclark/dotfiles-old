@@ -21,6 +21,5 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-"For LaTeXsuite
-set grepprg=grep\ -nH\ $*
+"For LaTeX-Box
 let g:tex_flavor='pdflatex'
