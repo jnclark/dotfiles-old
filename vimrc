@@ -3,6 +3,11 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+"Color Scheme
+syntax enable
+set background=dark
+colorscheme solarized
+
 "For line numbers
 set number
 
