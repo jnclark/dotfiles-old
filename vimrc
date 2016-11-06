@@ -1,4 +1,5 @@
 execute pathogen#infect()
+call pathogen#helptags()
 
 syntax on
 filetype plugin indent on
@@ -40,3 +41,13 @@ let g:neocomplete#sources#omni#input_patterns.tex =
     \ . '|includepdf%(\s*\[[^]]*\])?\s*\{[^}]*'
     \ . '|includestandalone%(\s*\[[^]]*\])?\s*\{[^}]*'
     \ . ')'
+
+"For file searching in vim itself
+"Path allows searching recursively in subdirectories
+set path+=**
+set wildmenu
+
+" Add relative file path to your existing statusline
+set statusline+=%F
+"Always have statusline on, even if only one file open
+set laststatus=2
