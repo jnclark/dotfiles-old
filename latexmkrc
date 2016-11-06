@@ -1,5 +1,5 @@
 $pdf_mode = 1;
-$pdf_previewer = evince;
+$pdf_previewer = 'start zathura';
 #$preview_continuous_mode = 1;
 #$out_dir = 'build';
 

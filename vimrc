@@ -25,6 +25,11 @@ set autoindent
 "For vimtex with neocomplete
 let g:tex_flavor='pdflatex'
 
+"Enable synctex for pdf viewer
+let g:vimtex_latexmk_options='-synctex=1'
+let g:latex_view_general_viewer = 'zathura'
+let g:vimtex_view_method = 'zathura'
+
 let g:neocomplete#enable_at_startup = 1
 
 if !exists('g:neocomplete#sources#omni#input_patterns')
