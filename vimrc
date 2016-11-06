@@ -51,3 +51,6 @@ set wildmenu
 set statusline+=%F
 "Always have statusline on, even if only one file open
 set laststatus=2
+
+"Enable spellchecking by default, en_us
+set spell spelllang=en_us
