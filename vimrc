@@ -54,3 +54,5 @@ set laststatus=2
 
 "Enable spellchecking by default, en_us
 set spell spelllang=en_us
+"spelling suggestions now in popup menu with \s 
+nnoremap \s ea<C-X><C-S>
