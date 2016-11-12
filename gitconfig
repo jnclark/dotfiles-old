@@ -6,6 +6,10 @@
 [core]
     editor = vim    
 
+#use vimdiff as difftool
+[diff]
+    tool = vimdiff
+
 # Use git pullall to pull all submodules for project
 [alias]
     pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"

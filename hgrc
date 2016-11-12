@@ -1,0 +1,12 @@
+%include .hgrc.local
+
+[ui]
+editor = vim
+ssh = ssh -C
+
+[extensions]
+hgext.extdiff =
+
+[extdiff]
+cmd.difftool = vimdiff
+
