@@ -15,10 +15,9 @@ set number
 set wrap
 set linebreak
 
-"Tabs are 4 spaces, and autoindent
+"autoindent and tabstops
 set tabstop=4
 set shiftwidth=4
-set expandtab
 set autoindent
 
 "For vimtex
