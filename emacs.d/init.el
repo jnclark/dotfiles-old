@@ -8,4 +8,10 @@
 
 (global-linum-mode t) ;; enable line numbers globally
 
+;; org mode keymaps
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-iswitchb)
+
 (setenv "TEXINPUTS" "/usr/lib/sagemath/local/share/texmf//:");;Set correct TEXINPUTS path for SageTeX
