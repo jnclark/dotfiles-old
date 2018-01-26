@@ -7,7 +7,7 @@ olddir=$dir/dotfiles_old
 # create dotfiles_old to backup
 echo "Creating backup location in $olddir"
 mkdir -p $olddir
-echo "...process complete"
+echo "...dotfile backup process complete"
 
 # move existing dotfiles in home to dotfiles_old directory
 # and create symlinks 

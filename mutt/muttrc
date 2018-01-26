@@ -1,4 +1,4 @@
-## Basic configuration
+## Basic configuration for mutt email client
 
 source "~/.mutt/user"
 
