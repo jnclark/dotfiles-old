@@ -4,3 +4,5 @@ vim/.netrwhist
 emacs.d/elpa
 emacs.d/session*
 mutt/header_cache
+mutt/user
+mutt/aliases
