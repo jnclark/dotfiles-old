@@ -6,7 +6,7 @@ filetype plugin indent on
 
 "Color Scheme
 syntax enable
-set background=dark
+"set background=dark
 
 "For line numbers, relative to current line
 set number
