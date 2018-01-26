@@ -1,6 +1,6 @@
 dir=$(dirname "$(readlink -f "$0")") # root dotfiles directory
 files="latexmkrc vimrc gitconfig hgrc" # dotfiles to symlink
-folders="vim emacs.d" #dotfolders to symlink
+folders="vim emacs.d mutt" #dotfolders to symlink
 olddir=$dir/dotfiles_old
 
 
