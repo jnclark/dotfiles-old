@@ -11,6 +11,24 @@ git pullall
 ```
 to pull all submodules
 
+## gitconfig
+One needs to add in a local config file with user info for git
+### .gitconfig.local
+```
+[user]
+	name = First Last
+	email = example@example.edu
+``` 
+
+## hgrc
+One needs to do the same as git for mercurial.
+### .hgrc.local
+```
+[ui]
+username = First Last <example@example.edu>
+
+```
+
 ## muttrc
 you need to add in user info, such as email, etc.,
 and any aliases you might wish to use
