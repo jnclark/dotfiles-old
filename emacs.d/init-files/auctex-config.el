@@ -20,3 +20,7 @@
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
+
+;; for synctex
+(TeX-source-correlate-mode t)
+(setq TeX-view-program-selection '((output-pdf "Zathura")))
