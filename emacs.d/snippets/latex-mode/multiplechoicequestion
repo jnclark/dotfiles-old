@@ -25,4 +25,4 @@
       }
       \choice ${6:None of the above.}
 \end{choices}
-\vspace{1in}
+\elasticvfill

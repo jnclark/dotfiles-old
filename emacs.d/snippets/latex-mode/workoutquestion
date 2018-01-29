@@ -2,6 +2,8 @@
 # name: workoutquestion
 # key: woq
 # --
+\begin{minipage}{\textwidth}
 \question[${3:10}] ${1:Body}
 \ifdefined\isdraft ${2:Description}\else\relax\fi
-\vspace{${4:1}in}
+\end{minipage}
+\elasticvfill
