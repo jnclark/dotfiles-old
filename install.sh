@@ -1,5 +1,5 @@
 dir=$(dirname "$(readlink -f "$0")") # root dotfiles directory
-files="latexmkrc vimrc gitconfig hgrc" # dotfiles to symlink
+files="latexmkrc vimrc gitconfig hgrc config/i3/config" # dotfiles to symlink
 folders="vim emacs.d mutt" #dotfolders to symlink
 olddir=$dir/dotfiles_old
 
@@ -7,7 +7,6 @@ olddir=$dir/dotfiles_old
 # create dotfiles_old to backup
 echo "Creating backup location in $olddir"
 mkdir -p $olddir
-echo "...dotfile backup process complete"
 
 # move existing dotfiles in home to dotfiles_old directory
 # and create symlinks 
