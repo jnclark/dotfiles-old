@@ -11,13 +11,13 @@
 	     (concat "~" cite)))))
 
 (setq reftex-label-alist
-      '(("axiom" ?a "axiom:"  "~\\ref{%s}" t ("axiom"   "ax.") -2)
+      '(("axiom" ?a "ax:"  "~\\ref{%s}" t ("axiom"   "ax.") -2)
 	("definition" ?d "def:"  "~\\ref{%s}" t ("definition"   "df.") -3)
-	("conjecture" ?c "conjecture:"  "~\\ref{%s}" t ("conjecture"   "cj.") -3)
-	("algorithm" ?g "algorithm:"  "~\\ref{%s}" t ("algorithm"   "al.") -4)
-	("theorem" ?h "theorem:" "~\\ref{%s}" t   ("theorem" "th.") -3)
+	("conjecture" ?c "conj:"  "~\\ref{%s}" t ("conjecture"   "cj.") -3)
+	("algorithm" ?g "alg:"  "~\\ref{%s}" t ("algorithm"   "al.") -4)
+	("theorem" ?h "thm:" "~\\ref{%s}" t   ("theorem" "th.") -3)
 	("proposition" ?p "prop:" "~\\ref{%s}" t   ("proposition" "pp.") -3)
-	("lemma" ?m "lemma:" "~\\ref{%s}" t   ("lemma" "lm.") -3)
+	("lemma" ?m "lem:" "~\\ref{%s}" t   ("lemma" "lm.") -3)
 	("claim" ?x "claim:" "~\\ref{%s}" t   ("claim" "cl.") -3)
 	("case" ?y "case:" "~\\ref{%s}" t   ("case" "cs.") -4)))
 
