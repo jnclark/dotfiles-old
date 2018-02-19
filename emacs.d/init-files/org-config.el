@@ -9,3 +9,5 @@
 (setq org-image-actual-width nil)
 
 (require  'htmlize)
+
+(setq org-src-fontify-natively t)
