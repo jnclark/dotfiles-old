@@ -14,11 +14,4 @@
 ;;autopair like behavior with electric-pair-mode
 (electric-pair-mode t)
 (setq-default electric-pair-inhibit-predicate 'electric-pair-conservative-inhibit)
-(add-hook 'sage-shell-mode-hook
-              (lambda ()
-                (define-key sage-mode-map "\"" 'electric-pair)
-                (define-key sage-mode-map "\'" 'electric-pair)
-                (define-key sage-mode-map "\(" 'electric-pair)
-                (define-key sage-mode-map "\[" 'electric-pair)
-                (define-key sage-mode-map "\{" 'electric-pair)))
 
