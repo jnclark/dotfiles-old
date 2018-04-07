@@ -28,4 +28,5 @@
 (load-file "~/.emacs.d/init-files/yasnippet-config.el")
 (load-file "~/.emacs.d/init-files/delimiter-config.el")
 (load-file "~/.emacs.d/init-files/keymaps.el")
+(load-file "~/.emacs.d/init-files/personal.el")
 

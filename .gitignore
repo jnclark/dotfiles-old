@@ -5,6 +5,7 @@ emacs.d/elpa*
 emacs.d/eshell
 emacs.d/projectile-bookmarks.eld
 emacs.d/session*
+emacs.d/init-files/personal.el
 mutt/header_cache
 mutt/user
 mutt/aliases
