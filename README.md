@@ -45,3 +45,8 @@ set my_domain="example.edu"
 ```
 alias name First Last <example@example.edu>
 ```
+### pass.gpg (contents to be encrypted)
+```
+set imap_pass="YOUR_PASS"
+set smtp_pass="YOUR_PASS"
+```
