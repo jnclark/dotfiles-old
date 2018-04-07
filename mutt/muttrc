@@ -2,6 +2,12 @@
 
 source "~/.mutt/user"
 
+# Import user pass from encrypted storage 
+# import keys into gpg2 first (for desktop use), 
+# gpg for server
+
+source "gpg2 -d ~/.mutt/pass.gpg |"
+
 ### Advanced configuration
 ### Thanks to https://github.com/ork/mutt-office365 for the general setup
 
