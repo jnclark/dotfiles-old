@@ -1,12 +1,8 @@
-(setq org-image-actual-width nil)
-
 (require  'htmlize)
-
+(setq org-image-actual-width nil)
 (setq org-src-fontify-natively t)
-
 (setq org-agenda-include-diary t)
 (setq cal-tex-diary t)
-(add-to-list 'org-modules "org-habit")
 
 ;; Load org babel language if needed (thanks to John Kitchin)
 ;; via https://emacs.stackexchange.com/questions/20577/org-babel-load-all-languages-on-demand
