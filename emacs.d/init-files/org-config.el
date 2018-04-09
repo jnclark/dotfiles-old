@@ -3,6 +3,8 @@
 (setq org-src-fontify-natively t)
 (setq org-agenda-include-diary t)
 (setq cal-tex-diary t)
+(setq org-enforce-todo-dependencies t)
+(setq org-enforce-todo-checkbox-dependencies t)
 
 ;; Load org babel language if needed (thanks to John Kitchin)
 ;; via https://emacs.stackexchange.com/questions/20577/org-babel-load-all-languages-on-demand
