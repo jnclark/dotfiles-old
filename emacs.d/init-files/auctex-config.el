@@ -24,3 +24,8 @@
 ;; for synctex
 (TeX-source-correlate-mode t)
 (setq TeX-view-program-selection '((output-pdf "Zathura")))
+
+;;Outline mode in LaTeX files
+(add-hook 'LaTeX-mode-hook 'outline-minor-mode)
+(eval-after-load 'latex
+  '(define-key LaTeX-mode-map (kbd "<C-tab>") 'outline-toggle-children))

@@ -13,7 +13,6 @@
 (tool-bar-mode -1) ;; hide the toolbar
 (toggle-scroll-bar -1) ;; hide the scrollbar
 (load-theme 'sanityinc-tomorrow-night t) ;;starter theme
-(global-linum-mode t) ;; enable line numbers globally
 
 (server-start) ;;for synctex and emacsclient
 
@@ -29,4 +28,3 @@
 (load-file "~/.emacs.d/init-files/delimiter-config.el")
 (load-file "~/.emacs.d/init-files/keymaps.el")
 (load-file "~/.emacs.d/init-files/personal.el")
-
