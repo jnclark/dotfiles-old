@@ -12,7 +12,7 @@
 (setq inhibit-startup-message t) ;; hide the startup message
 (tool-bar-mode -1) ;; hide the toolbar
 (toggle-scroll-bar -1) ;; hide the scrollbar
-(load-theme 'sanityinc-tomorrow-night t) ;;starter theme
+(load-theme 'tsdh-dark t) ;;starter theme
 
 (server-start) ;;for synctex and emacsclient
 
