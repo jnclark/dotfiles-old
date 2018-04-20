@@ -1,5 +1,5 @@
 dir=$(dirname "$(readlink -f "$0")") # root dotfiles directory
-files="profile bash_aliases latexmkrc vimrc gitconfig hgrc config/i3/config" # dotfiles to symlink
+files="profile bash_aliases latexmkrc vimrc gitconfig hgrc config/i3/config config/zathura/zathurarc" # dotfiles to symlink
 folders="vim emacs.d mutt mpd ncmpcpp" #dotfolders to symlink
 olddir=$dir/dotfiles_old
 
