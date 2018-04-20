@@ -77,7 +77,7 @@ set reverse_name=yes
 set reverse_realname=yes
 
 # Text editor
-set editor="vim"
+set editor="emacsclient"
 
 # Adress book handling
 set sort_alias=alias

@@ -2,13 +2,9 @@
 [include]
     path = ~/.gitconfig.local
 
-# Use default editor vim for git
+# Use following editor for git
 [core]
-    editor = vim    
-
-#use vimdiff as difftool
-[diff]
-    tool = vimdiff
+    editor = emacsclient    
 
 # Use git pullall to pull all submodules for project
 [alias]
