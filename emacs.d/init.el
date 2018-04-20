@@ -13,6 +13,7 @@
 (tool-bar-mode -1) ;; hide the toolbar
 (toggle-scroll-bar -1) ;; hide the scrollbar
 (load-theme 'tsdh-dark t) ;;starter theme
+(global-hl-line-mode 1) ;; highlights the current line.
 
 (server-start) ;;for synctex and emacsclient
 
