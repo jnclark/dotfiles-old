@@ -8,7 +8,8 @@ export $(gnome-keyring-daemon --daemonize --start)
 setxkbmap -option 'caps:ctrl_modifier'
 
 #default editor for quick edits
-export EDITOR=/usr/bin/vim
+export EDITOR="emacsclient -t"
+export VISUAL="emacsclient"
 
 #emacsclient
 export ALTERNATE_EDITOR=""
