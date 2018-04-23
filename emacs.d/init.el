@@ -12,6 +12,9 @@
 (setq inhibit-startup-message t) ;; hide the startup message
 (tool-bar-mode -1) ;; hide the toolbar
 (toggle-scroll-bar -1) ;; hide the scrollbar
+(add-to-list 'default-frame-alist
+	     '(vertical-scroll-bars . nil)) ;;hide scrollbar for emacsclient
+(menu-bar-mode -1) ;; hide the menubar, acces with C-mouse3
 (load-theme 'tsdh-dark t) ;;starter theme
 (global-hl-line-mode 1) ;; highlights the current line.
 
