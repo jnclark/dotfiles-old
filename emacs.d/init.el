@@ -4,7 +4,7 @@
     (require 'package)
 	  (add-to-list
 		   'package-archives
-			     '("melpa" . "https://melpa.milkbox.net/packages/")
+			     '("melpa" . "https://melpa.org/packages/")
 				    t))
 
 (package-initialize)
@@ -23,7 +23,7 @@
 (load-file "~/.emacs.d/init-files/spell-check-config.el")
 (load-file "~/.emacs.d/init-files/syntax-check-config.el")
 (load-file "~/.emacs.d/init-files/auctex-config.el")
-(load-file "~/.emacs.d/init-files/reftex-config.el")
+;;(load-file "~/.emacs.d/init-files/reftex-config.el")
 (load-file "~/.emacs.d/init-files/org-config.el")
 (load-file "~/.emacs.d/init-files/helm-config.el")
 (load-file "~/.emacs.d/init-files/company-config.el")
@@ -32,3 +32,9 @@
 (load-file "~/.emacs.d/init-files/delimiter-config.el")
 (load-file "~/.emacs.d/init-files/keymaps.el")
 (load-file "~/.emacs.d/init-files/personal.el")
+
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
+(provide 'init)
+;;; init.el ends here
