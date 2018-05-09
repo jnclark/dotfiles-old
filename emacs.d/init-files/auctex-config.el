@@ -1,5 +1,7 @@
 ;;auctex
 (require 'tex)
+(require 'reftex)
+
 (TeX-global-PDF-mode t)
 (add-hook 'LaTeX-mode-hook (lambda ()
   (push
@@ -19,7 +21,6 @@
 ; enable auto-fill mode, nice for text
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-(setq reftex-plug-into-AUCTeX t)
 
 ;; for synctex
 (TeX-source-correlate-mode t)
@@ -60,6 +61,11 @@
 	     '("lemma" LaTeX-env-label)
 	     '("claim" LaTeX-env-label)
 	     '("case" LaTeX-env-label))))
+
+;; for cref, quick fix
+(defun reftex-format-cref (label def-fmt ref-style)
+  (format "\\cref{%s}" label))
+(setq reftex-format-ref-function 'reftex-format-cref)
 
 ;; for helm bibtex and org-ref, with interleave
 (require 'org-ref)
