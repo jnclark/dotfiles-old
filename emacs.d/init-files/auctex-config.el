@@ -62,10 +62,31 @@
 	     '("claim" LaTeX-env-label)
 	     '("case" LaTeX-env-label))))
 
-;; for cref, quick fix
-(defun reftex-format-cref (label def-fmt ref-style)
-  (format "\\cref{%s}" label))
-(setq reftex-format-ref-function 'reftex-format-cref)
+;; for cleveref and nameref
+(setq reftex-ref-style-alist
+      (quote
+       (("Default" t
+	 (("\\ref" 13)
+	  ("\\pageref" 112)))
+	("Varioref" "varioref"
+	 (("\\vref" 118)
+	  ("\\vpageref" 103)
+	  ("\\Vref" 86)
+	  ("\\Ref" 82)))
+	("Fancyref" "fancyref"
+	 (("\\fref" 102)
+	  ("\\Fref" 70)))
+	("Hyperref" "hyperref"
+	 (("\\autoref" 97)
+	  ("\\autopageref" 117)))
+	("Cleveref" "cleveref"
+	 (("\\cref" 99)
+	  ("\\Cref" 67)
+	  ("\\cpageref" 100)
+	  ("\\Cpageref" 68)))
+	("Nameref" "nameref"
+	 (("\\nameref" 110))))))
+(setq reftex-ref-style-default-list (quote ("Cleveref" "Nameref" "Default")))
 
 ;; for helm bibtex and org-ref, with interleave
 (require 'org-ref)
