@@ -1,6 +1,9 @@
 #SageTex
 export TEXINPUTS="/usr/lib/sagemath/local/share/texmf//:"
 
+#Sage Path
+export SAGE_ROOT=/usr/lib/sagemath
+
 #ssh daemon paswd to get seahorse sshd capabilities in xfce, i3
 export $(gnome-keyring-daemon --daemonize --start)
 
