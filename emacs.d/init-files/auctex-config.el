@@ -5,10 +5,15 @@
 (TeX-global-PDF-mode t)
 (add-hook 'LaTeX-mode-hook (lambda ()
   (push
-    '("latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+    '("Latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
       :help "Run latexmk on file")
     TeX-command-list)))
-(add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk")))
+(add-hook 'LaTeX-mode-hook (lambda ()
+  (push
+    '("Latexmk shell escape" "latexmk -pdf --shell-escape %s" TeX-run-TeX nil t
+      :help "Run latexmk with shell escape on file")
+    TeX-command-list)))
+(add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "Latexmk")))
 
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
