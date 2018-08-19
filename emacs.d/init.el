@@ -23,7 +23,6 @@
 (load-file "~/.emacs.d/init-files/spell-check-config.el")
 (load-file "~/.emacs.d/init-files/syntax-check-config.el")
 (load-file "~/.emacs.d/init-files/auctex-config.el")
-;;(load-file "~/.emacs.d/init-files/reftex-config.el")
 (load-file "~/.emacs.d/init-files/org-config.el")
 (load-file "~/.emacs.d/init-files/helm-config.el")
 (load-file "~/.emacs.d/init-files/company-config.el")
