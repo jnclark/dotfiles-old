@@ -79,11 +79,16 @@ set reverse_realname=yes
 # Text editor
 set editor="emacsclient"
 
-# Adress book handling
+# Simple Addressing with aliases
 set sort_alias=alias
 set reverse_alias=yes
 set alias_file="~/.mutt/aliases"
 source "~/.mutt/aliases"
+
+# Address book with abook
+set query_command = "abook --mutt-query '%s'"
+macro generic,index,pager \ca "<shell-escape>abook<return>" "launch abook"
+macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender address to abook"
 
 # Thread ordering
 set sort = 'threads'
@@ -107,7 +112,6 @@ bind    index   <down>      next-entry
 bind    index   <delete>    delete-message
 bind    index   n           next-entry
 bind    index   p           previous-entry
-macro   index   Q           ":set quit=yes\nq" "Quit mutt without asking"
 bind    index   C           noop
 bind    index   -           collapse-thread
 bind    index   _           collapse-all
