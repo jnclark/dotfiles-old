@@ -5,9 +5,13 @@ $pdf_previewer = 'start zathura';
 
 push @extra_pdflatex_options, '-synctex=1' ;
 
+## Un-comment for auto-latexmk on systems using sage from
+## a source other than the package manager.
+## This might not be neccesary, depending on your TeX settup and settings.
+## If needed, you must locate the python script for your system.
 # Set aliases for latexmkrc so it can handle running SageTeX if neccesary
-$latex = "$latex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
-$pdflatex = "$pdflatex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
+# $latex = "$latex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
+# $pdflatex = "$pdflatex ; python /usr/lib/sagemath/local/share/texmf/tex/latex/sagetex/run-sagetex-if-necessary.py %B";
 
 # Set SageTeX deps 
 add_cus_dep( 'sage', 'sout', 0, 'makesout' );
